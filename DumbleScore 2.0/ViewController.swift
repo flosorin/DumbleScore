@@ -85,18 +85,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         //New game button
         let newGame = UIButton()
-        newGame.setTitle("New Game", for: UIControlState())
+        newGame.setTitle("New Game", for: UIControl.State())
         newGame.isEnabled = true //Enable the key
-        newGame.setTitleColor(UIColor.blue, for: UIControlState())
+        newGame.setTitleColor(UIColor.blue, for: UIControl.State())
         newGame.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width*0.4, height: UIScreen.main.bounds.size.height*0.07)
         newGame.addTarget(self, action: #selector(ViewController.newGame(_:)), for: .touchUpInside) //Add action to the key
         newGame.center = CGPoint(x: UIScreen.main.bounds.size.width*0.2, y: UIScreen.main.bounds.size.height*0.07)
         self.view.addSubview(newGame)
         
         //Edit button
-        edit.setTitle("Edit", for: UIControlState())
+        edit.setTitle("Edit", for: UIControl.State())
         edit.isEnabled = true //Enable the key
-        edit.setTitleColor(UIColor.blue, for: UIControlState())
+        edit.setTitleColor(UIColor.blue, for: UIControl.State())
         edit.frame = CGRect(x: 0, y: 0, width: 100, height: UIScreen.main.bounds.size.height*0.07)
         edit.addTarget(self, action: #selector(ViewController.edit(_:)), for: .touchUpInside) //Add action to the key
         edit.center = CGPoint(x: UIScreen.main.bounds.size.width*0.87, y: UIScreen.main.bounds.size.height*0.07)
@@ -109,9 +109,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         //Rules button
         let rules = UIButton()
-        rules.setTitle("Rules", for: UIControlState())
+        rules.setTitle("Rules", for: UIControl.State())
         rules.isEnabled = true //Enable the key
-        rules.setTitleColor(UIColor.blue, for: UIControlState())
+        rules.setTitleColor(UIColor.blue, for: UIControl.State())
         rules.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width*0.4, height: UIScreen.main.bounds.size.height*0.07)
         rules.addTarget(self, action: #selector(ViewController.rules(_:)), for: .touchUpInside) //Add action to the key
         rules.center = CGPoint(x: UIScreen.main.bounds.size.width*0.15, y: UIScreen.main.bounds.size.height*0.96)
@@ -119,7 +119,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //Distributer button
         let distributerButton = UIButton()
-        distributerButton.setImage(cards, for: UIControlState())
+        distributerButton.setImage(cards, for: UIControl.State())
         distributerButton.frame = CGRect(x: 0, y: 0, width: 21, height: 21)
         distributerButton.addTarget(self, action: #selector(ViewController.chooseDistributer(_:)), for: .touchUpInside) //Add action to the key
         distributerButton.center = CGPoint(x: UIScreen.main.bounds.size.width*0.5, y: UIScreen.main.bounds.size.height*0.96)
@@ -127,9 +127,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //Add button
         let add = UIButton()
-        add.setTitle("+", for: UIControlState())
+        add.setTitle("+", for: UIControl.State())
         add.isEnabled = true //Enable the key
-        add.setTitleColor(UIColor.blue, for: UIControlState())
+        add.setTitleColor(UIColor.blue, for: UIControl.State())
         add.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width*0.4, height: UIScreen.main.bounds.size.height*0.07)
         add.addTarget(self, action: #selector(ViewController.addPlayerButton(_:)), for: .touchUpInside) //Add action to the key
         add.center = CGPoint(x: UIScreen.main.bounds.size.width*0.9, y: UIScreen.main.bounds.size.height*0.96)
@@ -158,11 +158,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if editingMode
         {
-            edit.setTitle("OK", for: UIControlState())
+            edit.setTitle("OK", for: UIControl.State())
         }
         else
         {
-            edit.setTitle("Edit", for: UIControlState())
+            edit.setTitle("Edit", for: UIControl.State())
         }
         
         edit.removeFromSuperview()
@@ -274,7 +274,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             addPlayer(i: i, givenName: givenNames, initialize: true)
         }
         
-        playerTableView = UITableView(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height*0.1, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height*0.83), style: UITableViewStyle.grouped)
+        playerTableView = UITableView(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height*0.1, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height*0.83), style: UITableView.Style.grouped)
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPress(_:)))
         playerTableView.addGestureRecognizer(longPressRecognizer)
         playerTableView.delegate = self
@@ -470,7 +470,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @objc func longPress(_ longPressGestureRecognizer: UILongPressGestureRecognizer)
     {
         
-        if longPressGestureRecognizer.state == UIGestureRecognizerState.began
+        if longPressGestureRecognizer.state == UIGestureRecognizer.State.began
         {
             
             let touchPoint = longPressGestureRecognizer.location(in: self.playerTableView)
@@ -773,7 +773,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = PlayerViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "playerView")
+        let cell = PlayerViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "playerView")
         let index = (indexPath as NSIndexPath).row
         cell.name.text = playerNames[index]
         cell.score.text = "\(players[index].score)"
