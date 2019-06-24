@@ -12,29 +12,10 @@
 		173786911DA137FA0031CFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737868F1DA137FA0031CFAD /* Main.storyboard */; };
 		173786931DA137FA0031CFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173786921DA137FA0031CFAD /* Assets.xcassets */; };
 		173786961DA137FA0031CFAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173786941DA137FA0031CFAD /* LaunchScreen.storyboard */; };
-		173786A11DA137FA0031CFAD /* DumbleScore_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173786A01DA137FA0031CFAD /* DumbleScore_2_0Tests.swift */; };
-		173786AC1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173786AB1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift */; };
 		173786BA1DA138E90031CFAD /* PlayerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173786B91DA138E90031CFAD /* PlayerViewCell.swift */; };
 		17E9205D1DAA420200A65611 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9205C1DAA420200A65611 /* RulesViewController.swift */; };
 		FF0687F74F4DFDB7CCC54B42 /* Pods_DumbleScore_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D8A430BE9BD03163CEE3DF /* Pods_DumbleScore_2_0.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1737869D1DA137FA0031CFAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 173786801DA137FA0031CFAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 173786871DA137FA0031CFAD;
-			remoteInfo = "DumbleScore 2.0";
-		};
-		173786A81DA137FA0031CFAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 173786801DA137FA0031CFAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 173786871DA137FA0031CFAD;
-			remoteInfo = "DumbleScore 2.0";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		173786881DA137FA0031CFAD /* DumbleScore 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DumbleScore 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,12 +25,6 @@
 		173786921DA137FA0031CFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		173786951DA137FA0031CFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		173786971DA137FA0031CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1737869C1DA137FA0031CFAD /* DumbleScore 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DumbleScore 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		173786A01DA137FA0031CFAD /* DumbleScore_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbleScore_2_0Tests.swift; sourceTree = "<group>"; };
-		173786A21DA137FA0031CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		173786A71DA137FA0031CFAD /* DumbleScore 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DumbleScore 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		173786AB1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbleScore_2_0UITests.swift; sourceTree = "<group>"; };
-		173786AD1DA137FA0031CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		173786B91DA138E90031CFAD /* PlayerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewCell.swift; sourceTree = "<group>"; };
 		17E9205C1DAA420200A65611 /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		25C0349D1348D653F30B8F12 /* Pods-DumbleScore 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DumbleScore 2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-DumbleScore 2.0/Pods-DumbleScore 2.0.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,20 +41,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		173786991DA137FA0031CFAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		173786A41DA137FA0031CFAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				1737868A1DA137FA0031CFAD /* DumbleScore 2.0 */,
-				1737869F1DA137FA0031CFAD /* DumbleScore 2.0Tests */,
-				173786AA1DA137FA0031CFAD /* DumbleScore 2.0UITests */,
 				173786891DA137FA0031CFAD /* Products */,
 				C2D91CD082C417767B53BF49 /* Pods */,
 				C806FE21938BDD18949FA72D /* Frameworks */,
@@ -99,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				173786881DA137FA0031CFAD /* DumbleScore 2.0.app */,
-				1737869C1DA137FA0031CFAD /* DumbleScore 2.0Tests.xctest */,
-				173786A71DA137FA0031CFAD /* DumbleScore 2.0UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,24 +75,6 @@
 				173786971DA137FA0031CFAD /* Info.plist */,
 			);
 			path = "DumbleScore 2.0";
-			sourceTree = "<group>";
-		};
-		1737869F1DA137FA0031CFAD /* DumbleScore 2.0Tests */ = {
-			isa = PBXGroup;
-			children = (
-				173786A01DA137FA0031CFAD /* DumbleScore_2_0Tests.swift */,
-				173786A21DA137FA0031CFAD /* Info.plist */,
-			);
-			path = "DumbleScore 2.0Tests";
-			sourceTree = "<group>";
-		};
-		173786AA1DA137FA0031CFAD /* DumbleScore 2.0UITests */ = {
-			isa = PBXGroup;
-			children = (
-				173786AB1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift */,
-				173786AD1DA137FA0031CFAD /* Info.plist */,
-			);
-			path = "DumbleScore 2.0UITests";
 			sourceTree = "<group>";
 		};
 		C2D91CD082C417767B53BF49 /* Pods */ = {
@@ -178,42 +117,6 @@
 			productReference = 173786881DA137FA0031CFAD /* DumbleScore 2.0.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1737869B1DA137FA0031CFAD /* DumbleScore 2.0Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 173786B31DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0Tests" */;
-			buildPhases = (
-				173786981DA137FA0031CFAD /* Sources */,
-				173786991DA137FA0031CFAD /* Frameworks */,
-				1737869A1DA137FA0031CFAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1737869E1DA137FA0031CFAD /* PBXTargetDependency */,
-			);
-			name = "DumbleScore 2.0Tests";
-			productName = "DumbleScore 2.0Tests";
-			productReference = 1737869C1DA137FA0031CFAD /* DumbleScore 2.0Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		173786A61DA137FA0031CFAD /* DumbleScore 2.0UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 173786B61DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0UITests" */;
-			buildPhases = (
-				173786A31DA137FA0031CFAD /* Sources */,
-				173786A41DA137FA0031CFAD /* Frameworks */,
-				173786A51DA137FA0031CFAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				173786A91DA137FA0031CFAD /* PBXTargetDependency */,
-			);
-			name = "DumbleScore 2.0UITests";
-			productName = "DumbleScore 2.0UITests";
-			productReference = 173786A71DA137FA0031CFAD /* DumbleScore 2.0UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,18 +131,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2ZXUNHNRTB;
 						LastSwiftMigration = 0800;
-					};
-					1737869B1DA137FA0031CFAD = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 63Y3TYQDLZ;
-						LastSwiftMigration = 0800;
-						TestTargetID = 173786871DA137FA0031CFAD;
-					};
-					173786A61DA137FA0031CFAD = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 63Y3TYQDLZ;
-						LastSwiftMigration = 0800;
-						TestTargetID = 173786871DA137FA0031CFAD;
 					};
 				};
 			};
@@ -258,8 +149,6 @@
 			projectRoot = "";
 			targets = (
 				173786871DA137FA0031CFAD /* DumbleScore 2.0 */,
-				1737869B1DA137FA0031CFAD /* DumbleScore 2.0Tests */,
-				173786A61DA137FA0031CFAD /* DumbleScore 2.0UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,20 +161,6 @@
 				173786961DA137FA0031CFAD /* LaunchScreen.storyboard in Resources */,
 				173786931DA137FA0031CFAD /* Assets.xcassets in Resources */,
 				173786911DA137FA0031CFAD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1737869A1DA137FA0031CFAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		173786A51DA137FA0031CFAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,36 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		173786981DA137FA0031CFAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				173786A11DA137FA0031CFAD /* DumbleScore_2_0Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		173786A31DA137FA0031CFAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				173786AC1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1737869E1DA137FA0031CFAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 173786871DA137FA0031CFAD /* DumbleScore 2.0 */;
-			targetProxy = 1737869D1DA137FA0031CFAD /* PBXContainerItemProxy */;
-		};
-		173786A91DA137FA0031CFAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 173786871DA137FA0031CFAD /* DumbleScore 2.0 */;
-			targetProxy = 173786A81DA137FA0031CFAD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1737868F1DA137FA0031CFAD /* Main.storyboard */ = {
@@ -518,56 +364,6 @@
 			};
 			name = Release;
 		};
-		173786B41DA137FA0031CFAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "DumbleScore 2.0Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumbleScore 2.0.app/DumbleScore 2.0";
-			};
-			name = Debug;
-		};
-		173786B51DA137FA0031CFAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "DumbleScore 2.0Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumbleScore 2.0.app/DumbleScore 2.0";
-			};
-			name = Release;
-		};
-		173786B71DA137FA0031CFAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "DumbleScore 2.0UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "DumbleScore 2.0";
-			};
-			name = Debug;
-		};
-		173786B81DA137FA0031CFAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "DumbleScore 2.0UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "DumbleScore 2.0";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,24 +381,6 @@
 			buildConfigurations = (
 				173786B11DA137FA0031CFAD /* Debug */,
 				173786B21DA137FA0031CFAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		173786B31DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				173786B41DA137FA0031CFAD /* Debug */,
-				173786B51DA137FA0031CFAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		173786B61DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				173786B71DA137FA0031CFAD /* Debug */,
-				173786B81DA137FA0031CFAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
