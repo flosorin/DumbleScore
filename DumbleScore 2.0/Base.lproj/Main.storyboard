@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksn-lX-MTw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksn-lX-MTw">
                                 <rect key="frame" x="20" y="824" width="164" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dhR-5A-e8T"/>
@@ -42,7 +42,7 @@
                                     <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3A6-5d-vRf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-px-f4u">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-px-f4u">
                                 <rect key="frame" x="230" y="824" width="164" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KLE-kP-iHJ"/>
