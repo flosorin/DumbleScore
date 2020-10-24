@@ -11,7 +11,7 @@ import MGSwipeTableCell
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
-    var playerTableView = UITableView()
+    @IBOutlet weak var playerTableView: UITableView!
     let emptyImage = UIImage(named: "")
     let coupe = UIImage(named: "coupe_dumble")
     let cards = UIImage(named: "cards")
@@ -46,9 +46,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        setTopBar()
-        setBottomBar()
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPress(_:)))
+        playerTableView.addGestureRecognizer(longPressRecognizer)
+        playerTableView.delegate = self
+        playerTableView.dataSource = self
         checkMemory()
     }
     
@@ -80,66 +81,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         defaults.set(playerNames, forKey: "namesKey")
     }
     
-    //Create the top bar
-    func setTopBar()
-    {
-        //New game button
-        let newGame = UIButton()
-        newGame.setTitle("New Game", for: UIControl.State())
-        newGame.isEnabled = true //Enable the key
-        newGame.setTitleColor(UIColor.blue, for: UIControl.State())
-        newGame.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width*0.4, height: UIScreen.main.bounds.size.height*0.07)
-        newGame.addTarget(self, action: #selector(ViewController.newGame(_:)), for: .touchUpInside) //Add action to the key
-        newGame.center = CGPoint(x: UIScreen.main.bounds.size.width*0.2, y: UIScreen.main.bounds.size.height*0.07)
-        self.view.addSubview(newGame)
-        
-        //Edit button
-        edit.setTitle("Edit", for: UIControl.State())
-        edit.isEnabled = true //Enable the key
-        edit.setTitleColor(UIColor.blue, for: UIControl.State())
-        edit.frame = CGRect(x: 0, y: 0, width: 100, height: UIScreen.main.bounds.size.height*0.07)
-        edit.addTarget(self, action: #selector(ViewController.edit(_:)), for: .touchUpInside) //Add action to the key
-        edit.center = CGPoint(x: UIScreen.main.bounds.size.width*0.87, y: UIScreen.main.bounds.size.height*0.07)
-        self.view.addSubview(edit)
-        
-    }
-    
-    //Create the bottom bar
-    func setBottomBar()
-    {
-        //Rules button
-        let rules = UIButton()
-        rules.setTitle("Rules", for: UIControl.State())
-        rules.isEnabled = true //Enable the key
-        rules.setTitleColor(UIColor.blue, for: UIControl.State())
-        rules.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width*0.4, height: UIScreen.main.bounds.size.height*0.07)
-        rules.addTarget(self, action: #selector(ViewController.rules(_:)), for: .touchUpInside) //Add action to the key
-        rules.center = CGPoint(x: UIScreen.main.bounds.size.width*0.15, y: UIScreen.main.bounds.size.height*0.96)
-        self.view.addSubview(rules)
-        
-        //Distributer button
-        let distributerButton = UIButton()
-        distributerButton.setImage(cards, for: UIControl.State())
-        distributerButton.frame = CGRect(x: 0, y: 0, width: 21, height: 21)
-        distributerButton.addTarget(self, action: #selector(ViewController.chooseDistributer(_:)), for: .touchUpInside) //Add action to the key
-        distributerButton.center = CGPoint(x: UIScreen.main.bounds.size.width*0.5, y: UIScreen.main.bounds.size.height*0.96)
-        self.view.addSubview(distributerButton)
-        
-        //Add button
-        let add = UIButton()
-        add.setTitle("+", for: UIControl.State())
-        add.isEnabled = true //Enable the key
-        add.setTitleColor(UIColor.blue, for: UIControl.State())
-        add.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width*0.4, height: UIScreen.main.bounds.size.height*0.07)
-        add.addTarget(self, action: #selector(ViewController.addPlayerButton(_:)), for: .touchUpInside) //Add action to the key
-        add.center = CGPoint(x: UIScreen.main.bounds.size.width*0.9, y: UIScreen.main.bounds.size.height*0.96)
-        self.view.addSubview(add)
-        
-    }
-    
     //Buttons for top and bottom bar
     
-    @objc func newGame(_ sender: UIButton!)
+    @IBAction func newGame(_ sender: UIButton!)
     {
         //If there is already a game playing, ask for reset or not before asking for the number of players
         if nbPlayers != 0
@@ -152,7 +96,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    @objc func edit(_ sender: UIButton!)
+    @IBAction func edit(_ sender: UIButton!)
     {
         editingMode = !editingMode
         
@@ -169,12 +113,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.view.addSubview(edit)
     }
     
-    @objc func rules(_ sender: UIButton!)
-    {
-        performSegue(withIdentifier: "mainToRules", sender: self)
-    }
-    
-    @objc func chooseDistributer(_ sender: UIButton!)
+    @IBAction func chooseDistributer(_ sender: UIButton!)
     {
         if nbLost != nbPlayers - 1
         {
@@ -201,7 +140,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    @objc func addPlayerButton(_ sender: UIButton!)
+    @IBAction func addPlayerButton(_ sender: UIButton!)
     {
         if nbLost != nbPlayers - 1
         {
@@ -273,14 +212,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             players.append(player())
             addPlayer(i: i, givenName: givenNames, initialize: true)
         }
-        
-        playerTableView = UITableView(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height*0.1, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height*0.83), style: UITableView.Style.grouped)
-        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPress(_:)))
-        playerTableView.addGestureRecognizer(longPressRecognizer)
-        playerTableView.delegate = self
-        playerTableView.dataSource = self
-        playerTableView.backgroundColor = UIColor.white
-        view.addSubview(playerTableView)
+        playerTableView.reloadData()
         var waitingTime = Timer()
         waitingTime = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(endWaiting), userInfo: nil, repeats: false)
     }
@@ -635,8 +567,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             if players[i].gameLose
             {
-                cell.name.textColor = UIColor.lightGray
-                cell.score.textColor = UIColor.lightGray
                 cell.leader.image = dead
             }
             else if !isBeginning
@@ -669,8 +599,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if !players[distributerIndex].gameLose
         {
             let playerIndex = IndexPath(row: distributerIndex, section: 0)
-            let cell = playerTableView.cellForRow(at: playerIndex) as! PlayerViewCell
-            cell.distributer.image = cards
+            if let cell = playerTableView.cellForRow(at: playerIndex) as? PlayerViewCell {
+                cell.distributer.image = cards
+            }
         }
         else
         {
@@ -733,8 +664,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     self.players.removeAll()
                     self.playerNames.removeAll()
                     self.playerTableView.reloadData()
-                    self.playerTableView.removeFromSuperview()
                 }
+                self.distributerIndex = 0
                 self.nbPlayers = 0
                 self.nbLost = 0
                 self.updateMemory()
@@ -769,6 +700,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return playerNames.count
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView(frame: CGRect.zero)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
