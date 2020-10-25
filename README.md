@@ -35,14 +35,18 @@ If a player has more than one card of the same type (same numbers or same faces)
 
 ### Screenshots
 Example of use of the app:
+
 ![Application main page](/images/ingame.PNG)
 
 In Dark mode:
+
 ![Application main page](/images/ingame_dark.PNG)
 
 
 Rules:
+
 ![Application main page](/images/rules.PNG)
 
 Rules in dark mode:
+
 ![Application main page](/images/rules_dark.PNG)
