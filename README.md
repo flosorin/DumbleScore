@@ -31,3 +31,18 @@ After adding the points, cards are melted and distributed again.
 If a player reaches 50, 75 or 100, he goes back to 25, 50 or 75. It only works if it is the first time.
 
 If a player has more than one card of the same type (same numbers or same faces), he can reject all of them and take only one card in exchange. It is the same if he has following cards of the same color (3 or more). If the last player did that, the following player can choose which of those cards he takes.
+
+
+### Screenshots
+Example of use of the app:
+![Application main page](/images/ingame.PNG)
+
+In Dark mode:
+![Application main page](/images/ingame_dark.PNG)
+
+
+Rules:
+![Application main page](/images/rules.PNG)
+
+Rules in dark mode:
+![Application main page](/images/rules_dark.PNG)
