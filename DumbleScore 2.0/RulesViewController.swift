@@ -10,6 +10,9 @@ import UIKit
 
 class RulesViewController: UIViewController
 {
+    //Text view displaying rules
+    @IBOutlet weak var rulesTextView: UITextView!
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -18,16 +21,11 @@ class RulesViewController: UIViewController
     
     func setPannel()
     {
-        self.view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        
-        //Text view displaying rules
-        let rulesTextView = UITextView()
-        rulesTextView.isEditable = false
-        rulesTextView.frame = CGRect(x: 20, y: UIScreen.main.bounds.size.height*0.07, width: UIScreen.main.bounds.size.width - 40, height: UIScreen.main.bounds.size.height*0.85)
-        rulesTextView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+//        self.view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+//        rulesTextView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         //Fonts
-        let normalFont = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)]
-        let boldFont = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)]
+        let normalFont = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
+        let boldFont = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
         //Creating content
         let generalTitle = NSAttributedString(string: "General", attributes: boldFont)
         let generalContent = NSAttributedString(string: "\n\nEach player starts the game with five cards.\n\nEach card has a value: the number indicated for the cards with numbers, 10 for the face cards, 0 for the joker. The aces count for one.\n\nThe aim of the game is to have 9 points or less in the hand.\n\n\n", attributes: normalFont)
@@ -47,23 +45,16 @@ class RulesViewController: UIViewController
         rulesTextView.attributedText = textViewContent
         
         
-        rulesTextView.textColor = UIColor.black
+        if #available(iOS 13.0, *) {
+            rulesTextView.textColor = UIColor.label
+        } else {
+            rulesTextView.textColor = UIColor.black
+        }
         rulesTextView.textAlignment = NSTextAlignment.center
         self.view.addSubview(rulesTextView)
-        
-        //Dismiss button
-        let dismissButton = UIButton()
-        dismissButton.setTitle("Dismiss", for: UIControlState())
-        dismissButton.isEnabled = true
-        dismissButton.setTitleColor(UIColor.blue, for: UIControlState())
-        dismissButton.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width*0.4, height: UIScreen.main.bounds.size.height*0.07)
-        dismissButton.addTarget(self, action: #selector(RulesViewController.dismiss(_:)), for: .touchUpInside)
-        dismissButton.center = CGPoint(x: UIScreen.main.bounds.size.width*0.5, y: UIScreen.main.bounds.size.height*0.96)
-        self.view.addSubview(dismissButton)
-        
     }
     
-    @objc func dismiss(_ sender: UIButton!)
+    @IBAction func dismiss(_ sender: UIButton!)
     {
         self.dismiss(animated: true, completion: nil)
     }

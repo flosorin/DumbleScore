@@ -12,29 +12,10 @@
 		173786911DA137FA0031CFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737868F1DA137FA0031CFAD /* Main.storyboard */; };
 		173786931DA137FA0031CFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173786921DA137FA0031CFAD /* Assets.xcassets */; };
 		173786961DA137FA0031CFAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173786941DA137FA0031CFAD /* LaunchScreen.storyboard */; };
-		173786A11DA137FA0031CFAD /* DumbleScore_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173786A01DA137FA0031CFAD /* DumbleScore_2_0Tests.swift */; };
-		173786AC1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173786AB1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift */; };
 		173786BA1DA138E90031CFAD /* PlayerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173786B91DA138E90031CFAD /* PlayerViewCell.swift */; };
 		17E9205D1DAA420200A65611 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9205C1DAA420200A65611 /* RulesViewController.swift */; };
 		FF0687F74F4DFDB7CCC54B42 /* Pods_DumbleScore_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D8A430BE9BD03163CEE3DF /* Pods_DumbleScore_2_0.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1737869D1DA137FA0031CFAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 173786801DA137FA0031CFAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 173786871DA137FA0031CFAD;
-			remoteInfo = "DumbleScore 2.0";
-		};
-		173786A81DA137FA0031CFAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 173786801DA137FA0031CFAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 173786871DA137FA0031CFAD;
-			remoteInfo = "DumbleScore 2.0";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		173786881DA137FA0031CFAD /* DumbleScore 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DumbleScore 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,12 +25,6 @@
 		173786921DA137FA0031CFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		173786951DA137FA0031CFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		173786971DA137FA0031CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1737869C1DA137FA0031CFAD /* DumbleScore 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DumbleScore 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		173786A01DA137FA0031CFAD /* DumbleScore_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbleScore_2_0Tests.swift; sourceTree = "<group>"; };
-		173786A21DA137FA0031CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		173786A71DA137FA0031CFAD /* DumbleScore 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DumbleScore 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		173786AB1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbleScore_2_0UITests.swift; sourceTree = "<group>"; };
-		173786AD1DA137FA0031CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		173786B91DA138E90031CFAD /* PlayerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewCell.swift; sourceTree = "<group>"; };
 		17E9205C1DAA420200A65611 /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		25C0349D1348D653F30B8F12 /* Pods-DumbleScore 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DumbleScore 2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-DumbleScore 2.0/Pods-DumbleScore 2.0.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,20 +41,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		173786991DA137FA0031CFAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		173786A41DA137FA0031CFAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				1737868A1DA137FA0031CFAD /* DumbleScore 2.0 */,
-				1737869F1DA137FA0031CFAD /* DumbleScore 2.0Tests */,
-				173786AA1DA137FA0031CFAD /* DumbleScore 2.0UITests */,
 				173786891DA137FA0031CFAD /* Products */,
 				C2D91CD082C417767B53BF49 /* Pods */,
 				C806FE21938BDD18949FA72D /* Frameworks */,
@@ -99,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				173786881DA137FA0031CFAD /* DumbleScore 2.0.app */,
-				1737869C1DA137FA0031CFAD /* DumbleScore 2.0Tests.xctest */,
-				173786A71DA137FA0031CFAD /* DumbleScore 2.0UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,24 +75,6 @@
 				173786971DA137FA0031CFAD /* Info.plist */,
 			);
 			path = "DumbleScore 2.0";
-			sourceTree = "<group>";
-		};
-		1737869F1DA137FA0031CFAD /* DumbleScore 2.0Tests */ = {
-			isa = PBXGroup;
-			children = (
-				173786A01DA137FA0031CFAD /* DumbleScore_2_0Tests.swift */,
-				173786A21DA137FA0031CFAD /* Info.plist */,
-			);
-			path = "DumbleScore 2.0Tests";
-			sourceTree = "<group>";
-		};
-		173786AA1DA137FA0031CFAD /* DumbleScore 2.0UITests */ = {
-			isa = PBXGroup;
-			children = (
-				173786AB1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift */,
-				173786AD1DA137FA0031CFAD /* Info.plist */,
-			);
-			path = "DumbleScore 2.0UITests";
 			sourceTree = "<group>";
 		};
 		C2D91CD082C417767B53BF49 /* Pods */ = {
@@ -162,12 +101,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 173786B01DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0" */;
 			buildPhases = (
+				628DE27BFEB386A274893606 /* [CP] Check Pods Manifest.lock */,
 				D15EDEAA7A4CBA797D3B25EA /* 📦 Check Pods Manifest.lock */,
 				173786841DA137FA0031CFAD /* Sources */,
 				173786851DA137FA0031CFAD /* Frameworks */,
 				173786861DA137FA0031CFAD /* Resources */,
 				93A6A53F43D597B347CBAB9F /* 📦 Embed Pods Frameworks */,
-				83BCED17F3198D4F211117CE /* 📦 Copy Pods Resources */,
+				DD861F289E0D1A6AD2E13542 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,42 +118,6 @@
 			productReference = 173786881DA137FA0031CFAD /* DumbleScore 2.0.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1737869B1DA137FA0031CFAD /* DumbleScore 2.0Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 173786B31DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0Tests" */;
-			buildPhases = (
-				173786981DA137FA0031CFAD /* Sources */,
-				173786991DA137FA0031CFAD /* Frameworks */,
-				1737869A1DA137FA0031CFAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1737869E1DA137FA0031CFAD /* PBXTargetDependency */,
-			);
-			name = "DumbleScore 2.0Tests";
-			productName = "DumbleScore 2.0Tests";
-			productReference = 1737869C1DA137FA0031CFAD /* DumbleScore 2.0Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		173786A61DA137FA0031CFAD /* DumbleScore 2.0UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 173786B61DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0UITests" */;
-			buildPhases = (
-				173786A31DA137FA0031CFAD /* Sources */,
-				173786A41DA137FA0031CFAD /* Frameworks */,
-				173786A51DA137FA0031CFAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				173786A91DA137FA0031CFAD /* PBXTargetDependency */,
-			);
-			name = "DumbleScore 2.0UITests";
-			productName = "DumbleScore 2.0UITests";
-			productReference = 173786A71DA137FA0031CFAD /* DumbleScore 2.0UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,34 +125,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Florian Sorin";
 				TargetAttributes = {
 					173786871DA137FA0031CFAD = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2ZXUNHNRTB;
-						LastSwiftMigration = 0800;
-					};
-					1737869B1DA137FA0031CFAD = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 63Y3TYQDLZ;
-						LastSwiftMigration = 0800;
-						TestTargetID = 173786871DA137FA0031CFAD;
-					};
-					173786A61DA137FA0031CFAD = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 63Y3TYQDLZ;
-						LastSwiftMigration = 0800;
-						TestTargetID = 173786871DA137FA0031CFAD;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
 			buildConfigurationList = 173786831DA137FA0031CFAD /* Build configuration list for PBXProject "DumbleScore 2.0" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -258,8 +149,6 @@
 			projectRoot = "";
 			targets = (
 				173786871DA137FA0031CFAD /* DumbleScore 2.0 */,
-				1737869B1DA137FA0031CFAD /* DumbleScore 2.0Tests */,
-				173786A61DA137FA0031CFAD /* DumbleScore 2.0UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,36 +164,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1737869A1DA137FA0031CFAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		173786A51DA137FA0031CFAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		83BCED17F3198D4F211117CE /* 📦 Copy Pods Resources */ = {
+		628DE27BFEB386A274893606 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DumbleScore 2.0-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DumbleScore 2.0/Pods-DumbleScore 2.0-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		93A6A53F43D597B347CBAB9F /* 📦 Embed Pods Frameworks */ = {
@@ -337,6 +219,24 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		DD861F289E0D1A6AD2E13542 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DumbleScore 2.0/Pods-DumbleScore 2.0-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DumbleScore 2.0/Pods-DumbleScore 2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -351,36 +251,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		173786981DA137FA0031CFAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				173786A11DA137FA0031CFAD /* DumbleScore_2_0Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		173786A31DA137FA0031CFAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				173786AC1DA137FA0031CFAD /* DumbleScore_2_0UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1737869E1DA137FA0031CFAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 173786871DA137FA0031CFAD /* DumbleScore 2.0 */;
-			targetProxy = 1737869D1DA137FA0031CFAD /* PBXContainerItemProxy */;
-		};
-		173786A91DA137FA0031CFAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 173786871DA137FA0031CFAD /* DumbleScore 2.0 */;
-			targetProxy = 173786A81DA137FA0031CFAD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1737868F1DA137FA0031CFAD /* Main.storyboard */ = {
@@ -406,18 +277,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -451,18 +333,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -481,6 +374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -491,14 +385,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 2ZXUNHNRTB;
 				INFOPLIST_FILE = "DumbleScore 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -508,63 +405,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 2ZXUNHNRTB;
 				INFOPLIST_FILE = "DumbleScore 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		173786B41DA137FA0031CFAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "DumbleScore 2.0Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumbleScore 2.0.app/DumbleScore 2.0";
-			};
-			name = Debug;
-		};
-		173786B51DA137FA0031CFAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "DumbleScore 2.0Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumbleScore 2.0.app/DumbleScore 2.0";
-			};
-			name = Release;
-		};
-		173786B71DA137FA0031CFAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "DumbleScore 2.0UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "DumbleScore 2.0";
-			};
-			name = Debug;
-		};
-		173786B81DA137FA0031CFAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "DumbleScore 2.0UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.floso.DumbleScore-2-0UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "DumbleScore 2.0";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -585,24 +435,6 @@
 			buildConfigurations = (
 				173786B11DA137FA0031CFAD /* Debug */,
 				173786B21DA137FA0031CFAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		173786B31DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				173786B41DA137FA0031CFAD /* Debug */,
-				173786B51DA137FA0031CFAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		173786B61DA137FA0031CFAD /* Build configuration list for PBXNativeTarget "DumbleScore 2.0UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				173786B71DA137FA0031CFAD /* Debug */,
-				173786B81DA137FA0031CFAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

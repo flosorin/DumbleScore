@@ -22,7 +22,7 @@ class PlayerViewCell: MGSwipeTableCell
         fatalError("init(coder:)")
     }
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
     {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -35,13 +35,13 @@ class PlayerViewCell: MGSwipeTableCell
         
         name = UILabel()
         name.frame = CGRect(x: distFromSide + distBetween + size, y: 20, width: Int(UIScreen.main.bounds.size.width*0.4), height: size)
-        name.textColor = UIColor.black
+//        name.textColor = UIColor.black
         contentView.addSubview(name)
         
         score = UILabel()
         score.frame = CGRect(x: Int(UIScreen.main.bounds.size.width) - size - distFromSide - 2*distBetween - Int(UIScreen.main.bounds.size.width*0.1), y: 20, width: Int(UIScreen.main.bounds.size.width*0.1), height: size)
         score.textAlignment = NSTextAlignment.right
-        score.textColor = UIColor.black
+//        score.textColor = UIColor.black
         contentView.addSubview(score)
         
         leader = UIImageView(image: emptyImage)
